@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Center Milk สาขารังสิต</title>
+<!-- ฟอนต์: เปลี่ยนชื่อฟอนต์ได้ที่ลิงก์นี้ + ตัวแปร --font ใน css/style.css -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header><div class="bar">
+  <a class="brand" href="#/">
+    <img id="logo" alt="Center Milk"><span class="wm" id="wm">CENTER MILK</span>
+    <span class="brandtxt"><b id="brandName"></b><small id="brandTag"></small></span>
+  </a>
+  <nav class="nav" id="nav"></nav>
+</div></header>
+
+<div class="wrap" id="app"></div>
+<footer id="foot"></footer>
+
+<button class="fab" id="fab" data-a="openCart"><span id="fabL"></span><span id="fabR"></span></button>
+<div class="scrim" id="scrim" data-a="closeAll"></div>
+<aside class="drawer" id="drawer">
+  <div class="dh"><h3 id="dTitle"></h3><button class="x" data-a="closeAll" aria-label="close">×</button></div>
+  <div class="db" id="dBody"></div><div class="df" id="dFoot"></div>
+</aside>
+<div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+<div class="toast" id="toast"></div>
+
+<!-- ลำดับสำคัญ: config → data → app -->
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
